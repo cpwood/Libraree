@@ -1,0 +1,158 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #f7f2f5 !important;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	overflow-x: hidden;
+}
+
+a {
+	color: #3a3b3c;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #3a3b3c;
+	text-decoration: none;
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
+
+h1 {
+	font-family: "Readex Pro", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h2 {
+	font-family: "Readex Pro", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1.6em;
+}
+
+h3 {
+	font-family: "Readex Pro", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1.3em;
+}
+
+a.primary-link {
+	color: rgb(206, 38, 38) !important;
+	text-decoration: none;
+}
+
+a.primary-link:hover {
+	color: rgb(206, 38, 38) !important;
+	text-decoration: none;
+}
+
+a.primary-link:visited {
+	color: rgb(206, 38, 38) !important;
+	text-decoration: none;
+}
+
+img.small-logo {
+	max-height: 40px;
+}
+
+.btn-close {
+	float: right; 
+	margin-top: 10px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
+
+input:focus {
+	outline: none !important;
+	border: 1px solid #ced4da !important;
+	box-shadow: none !important;
+}
+
+
+button:focus {
+	outline: none !important;
+	border: 1px solid #ced4da !important;
+	box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #333;
+	background-color: #e9e8e8;
+}
+
+.heart {
+	color: rgb(206, 38, 38) !important;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	/* Remove default */
+	-webkit-appearance: none;
+
+	/* Now your own custom styles */
+	height: 14px;
+	width: 14px;
+	display: block;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+	/* setup all the background tweaks for our custom icon */
+	background-repeat: no-repeat;
+
+	/* icon size */
+	background-size: 14px;
+  }
+
+  .btn {
+	  min-width: 200px !important;
+  }
+
+  i {
+	  margin-right: 5px;
+  }
