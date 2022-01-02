@@ -2,14 +2,20 @@
     import { createEventDispatcher } from 'svelte';
 	import DeviceDetector from 'device-detector-js';
 
+	let debugClick = 0;
+
 	const dispatch = createEventDispatcher();
 
 	const deviceDetector = new DeviceDetector();
 	const device = deviceDetector.parse(navigator.userAgent);
 
-    function start(){
+    function start() {
         dispatch('start');
     }
+
+	function quickCreate() {
+		dispatch('quickCreate');
+	}
 
 </script>
 
@@ -41,6 +47,10 @@
 	.qr {
 		max-width: 150px;
 	}
+
+	#examples {
+		max-width: 100%;
+	}
 </style>
 
 <div id="home" class="row">
@@ -48,13 +58,13 @@
 		<div class="container">
 			<div class="row m-2">
 				<div class="col text-center title">
-					<img class="logo" src="/images/Libraree-light.png" alt="Libraree" />
+					<img class="logo" src="/images/Libraree-light.png" alt="Libraree" on:click={() => debugClick++} />
 					<p>CARDS</p>
 				</div>
 			</div>
 			<div class="row m-3">
 				<div class="col text-center">
-					<img class="example" src="/images/Example.png" alt="Example Cards" />
+					<img id="examples" class="example" src="/images/Examples-tops.png" alt="Example Cards" />
 				</div>
 			</div>
 			<div class="row m-5">
@@ -62,7 +72,7 @@
 					<h1>Put UK library cards in your Apple or Android wallet for free.</h1>
 				</div>
 			</div>
-			{#if device.os.name != 'iOS' && device.os.name != 'Android' && location.hostname == 'cards.libraree.org'}
+			{#if device.os.name != 'iOS' && device.os.name != 'Android' && location.hostname == 'cards.libraree.org' && debugClick < 5}
 				<div class="row m-5">
 					<div class="col text-center">
 						<img class="qr" src="/images/libraree-qr.png" alt="QR Code for cards.libraree.org" />
@@ -82,6 +92,13 @@
 					<a href="https://walletpasses.io/" target="_blank"><img class="wallet-logo" src="/images/walletpasses.png" alt="Wallet Passes" /></a>
 				</div>
 			</div>
+			{#if debugClick > 4}
+				<div class="row m-5">
+					<div class="col text-center">
+						<a href="#quickcreate" on:click|preventDefault={() => quickCreate()}>Quick Create</a>
+					</div>
+				</div>
+			{/if}
 		</div>
 	</div>
 </div>

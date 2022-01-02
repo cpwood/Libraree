@@ -11,12 +11,18 @@ import Working from './Working.svelte';
 import Name from './Name.svelte';
 import Download from './Download.svelte';
 import Support from './Support.svelte';
+import QuickCreate from './QuickCreate.svelte';
 
 	let context = new CardContext();
 
 	function start() {
 		context = new CardContext();
 		context.screen = Screen.Authority;
+	}
+
+	function quickCreate() {
+		context = new CardContext();
+		context.screen = Screen.QuickCreate;
 	}
 
 	function next() {
@@ -34,7 +40,7 @@ import Support from './Support.svelte';
 
 <main>
 	{#if context.screen == Screen.Home}
-		<Home on:start={() => start()}></Home>
+		<Home on:start={() => start()} on:quickCreate={() => quickCreate()}></Home>
 	{:else if context.screen == Screen.Authority}
 		<Wizard title="Choose your library service." on:home={() => context.screen = Screen.Home }>
 			<Authority context={context} on:next={() => next()} />
@@ -63,9 +69,13 @@ import Support from './Support.svelte';
 		<Wizard title="Good news - it's ready!" on:home={() => context.screen = Screen.Home }>
 			<Download context={context} on:next={() => next()} />
 		</Wizard>
-	{:else}
+	{:else if context.screen == Screen.Support}
 		<Wizard title="Bad news." on:home={() => context.screen = Screen.Home }>
 			<Support context={context} on:next={() => next()} />
+		</Wizard>
+	{:else}
+		<Wizard title="Quick Create" on:home={() => context.screen = Screen.Home }>
+			<QuickCreate context={context} on:next={() => next()} />
 		</Wizard>
 	{/if}
 </main>

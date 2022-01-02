@@ -7,5 +7,6 @@ export enum Screen {
     Working,
     Name,
     Download,
-    Support
+    Support,
+    QuickCreate
 }
