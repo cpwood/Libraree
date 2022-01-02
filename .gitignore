@@ -108,3 +108,4 @@ __azurite*.json
 __*
 
 local.settings.json
+ngrok.yml

@@ -69,16 +69,6 @@
 
 <div class="row">
     <div class="col">
-        <div class="m-2">
-            <p>Move and zoom the photo so your barcode fills as much of the box as possible, and ensure the green line passes through the full width of it.</p>
-            <p class="text-center">
-                <img src="/images/Card-ZoomCrop.png" alt="Example card" />
-            </p>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col">
         <div id="crop-container" bind:this={container} class="m-3" bind:clientWidth={width} bind:clientHeight={height}>
             <Cropper
                 image={context.image}
@@ -94,7 +84,16 @@
                 on:cropcomplete={e => onCrop(e.detail.pixels)}
                 />
         </div>
-        <p>On a phone or tablet, you can use a single finger to move the image and two fingers to zoom.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="m-2">
+            <p>Move and zoom the photo so your barcode fills as much of the box as possible, and ensure the green line passes through the full width of it.</p>
+            <p class="text-center">
+                <img src="/images/Card-ZoomCrop.png" alt="Example card" />
+            </p>
+        </div>
     </div>
 </div>
 <div class="row">

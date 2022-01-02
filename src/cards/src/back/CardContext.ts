@@ -41,6 +41,13 @@ export default class CardContext {
             foregroundColor: this.convertToRgb(brand.TextColour),
             backgroundColor: this.convertToRgb(brand.BackgroundColour),
             labelColor: this.convertToRgb(brand.LabelColour),
+            barcodes: [
+                {
+                    format: 'PKBarcodeFormatQR',
+                    message: this.scannedNumber,
+                    messageEncoding: 'iso-8859-1'
+                }
+            ],
             storeCard: {
                 auxiliaryFields: [
                     {
@@ -128,7 +135,7 @@ export default class CardContext {
             pass.file(file.name, file.bytes as Uint8Array);
         }
         
-        this.pass = await pass.generateAsync({type: 'blob'});
+        this.pass = await pass.generateAsync({type: 'blob', mimeType: 'application/vnd.apple.pkpass'});
     }
 }
 

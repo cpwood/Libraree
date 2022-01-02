@@ -2,15 +2,22 @@
     import { createEventDispatcher } from 'svelte';
     import type CardContext from './back/CardContext';
     import { Screen } from './back/Screens';
-    import FileSaver from 'file-saver';
 
 	const dispatch = createEventDispatcher();
 
 	export let context: CardContext;
     let confirmed = false;
 
-    function download() {
-        FileSaver.saveAs(context.pass, `${context.library.code}-${context.scannedNumber}.pkpass`, );
+    function download(): boolean {
+        if (!confirmed) return false;
+
+        const reader = new FileReader();
+
+        reader.onload = (e) => {
+            window.location.href = reader.result as string;
+        };
+
+        reader.readAsDataURL(context.pass);
     }
 
     function next() {
@@ -64,8 +71,10 @@
 </div>
 <div class="row">
     <div class="col text-center m-3">
-        <a href="#wallet" on:click|preventDefault={() => download()}><img class:disabled={!confirmed} class="wallet-logo" src="/images/add-to-apple-wallet.png" alt="Apple Wallet" /></a>
-		<a href="#wallet" on:click|preventDefault={() => download()}><img class:disabled={!confirmed} class="wallet-logo" src="/images/add-to-walletpasses.png" alt="Wallet Passes" /></a>
+        <a href="download" on:click|preventDefault={() => download()}>
+            <img class:disabled={!confirmed} class="wallet-logo" src="/images/add-to-apple-wallet.png" alt="Apple Wallet" />
+            <img class:disabled={!confirmed} class="wallet-logo" src="/images/add-to-walletpasses.png" alt="Wallet Passes" />
+        </a>
     </div>
 </div>
 <div class="row mt20">

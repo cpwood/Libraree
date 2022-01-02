@@ -1,0 +1,536 @@
+{
+  "items" : [
+    {
+      "path" : "images/libraree-qr.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1641031021,
+      "checksum" : "9fa40c5ef03d697ee0871c5b0551120e",
+      "fileSize" : 1670
+    },
+    {
+      "path" : "images/apple-touch-icon-180x180.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "5f0fad46c8e1c730d942954a2cd4e071",
+      "fileSize" : 42559
+    },
+    {
+      "path" : "index.html",
+      "mimeType" : "text/html",
+      "lastUpdated" : 1640977004,
+      "checksum" : "cb823ad30128f793e9854e5f02a9445c",
+      "fileSize" : 1442
+    },
+    {
+      "path" : "build/bundle.js",
+      "mimeType" : "text/javascript",
+      "lastUpdated" : 1641150052,
+      "checksum" : "07b7ad4863e0b4818febf771a549a124",
+      "fileSize" : 1676716
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-regular.svg",
+      "mimeType" : "image/svg+xml",
+      "lastUpdated" : 1639056878,
+      "checksum" : "8681f434273fd6a267b1a16a035c5f79",
+      "fileSize" : 48974
+    },
+    {
+      "path" : "build/bundle.css",
+      "mimeType" : "text/css",
+      "lastUpdated" : 1641150052,
+      "checksum" : "0efe924aa51b612d1ed08b1a9956600b",
+      "fileSize" : 3066
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-700.ttf",
+      "mimeType" : "font/ttf",
+      "lastUpdated" : 1639056776,
+      "checksum" : "3786eafedb3643366f2a7ea7b19eb457",
+      "fileSize" : 26752
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-700.svg",
+      "mimeType" : "image/svg+xml",
+      "lastUpdated" : 1639056776,
+      "checksum" : "972b77230196ed73178256994b8b2892",
+      "fileSize" : 57163
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-regular.ttf",
+      "mimeType" : "font/ttf",
+      "lastUpdated" : 1639056878,
+      "checksum" : "9293bc52bc069c20e27b44f493cf608b",
+      "fileSize" : 36216
+    },
+    {
+      "path" : "images/walletpasses.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1640977921,
+      "checksum" : "fdd70fde0889bf6af9f6be0ba763a881",
+      "fileSize" : 29207
+    },
+    {
+      "path" : "images/apple-touch-icon-120x120.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "bdc79cd31a70023650c555ad54d748ed",
+      "fileSize" : 18963
+    },
+    {
+      "path" : "bootstrap.min.css",
+      "mimeType" : "text/css",
+      "lastUpdated" : 1639058448,
+      "checksum" : "94994c66fec8c3468b269dc0cc242151",
+      "fileSize" : 163873
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-regular.ttf",
+      "mimeType" : "font/ttf",
+      "lastUpdated" : 1639056776,
+      "checksum" : "1ac1c7670e827784e66de18f2667ab83",
+      "fileSize" : 26756
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-600.svg",
+      "mimeType" : "image/svg+xml",
+      "lastUpdated" : 1639090569,
+      "checksum" : "8cff6cf16eab64389db15fccaffd4fef",
+      "fileSize" : 71230
+    },
+    {
+      "path" : "images/apple-touch-icon-76x76.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "4544e92ffeb325358758a8f25693a6c6",
+      "fileSize" : 7961
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-600.ttf",
+      "mimeType" : "font/ttf",
+      "lastUpdated" : 1639090569,
+      "checksum" : "720885fb0c6856d1237fcba34023a2b8",
+      "fileSize" : 22276
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-regular.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639090569,
+      "checksum" : "d8ab6e6b16f310580e0570584c0ce6d4",
+      "fileSize" : 12312
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-600.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639090569,
+      "checksum" : "7577ca36fed1089b15c7ae5730fa3805",
+      "fileSize" : 12464
+    },
+    {
+      "path" : "images/Card-Full.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1640977921,
+      "checksum" : "11d8018aca3c801152339dbad0e73f24",
+      "fileSize" : 190458
+    },
+    {
+      "path" : "images/progress-anim.gif",
+      "mimeType" : "image/gif",
+      "lastUpdated" : 1639081030,
+      "checksum" : "4660662abb7bfde011c7d1f61cc7402c",
+      "fileSize" : 276565
+    },
+    {
+      "path" : "images/apple-touch-icon-114x114.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "40e36a1bd361559ae6490c7cb4f11074",
+      "fileSize" : 17202
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-700.svg",
+      "mimeType" : "image/svg+xml",
+      "lastUpdated" : 1639056878,
+      "checksum" : "57888be7f3e68a7050452ea3157cf4de",
+      "fileSize" : 48982
+    },
+    {
+      "path" : "images/Example.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1640979966,
+      "checksum" : "61f51082760ed8ab43d2f9ad135a5b81",
+      "fileSize" : 103512
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-regular.svg",
+      "mimeType" : "image/svg+xml",
+      "lastUpdated" : 1639090569,
+      "checksum" : "3fe0ad7e4325cf8450f1271bc0724d03",
+      "fileSize" : 71187
+    },
+    {
+      "path" : "images/Libraree-cards.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1641059806,
+      "checksum" : "0ac5d5ca29a64187cd68d1a6b2bb9268",
+      "fileSize" : 59050
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-regular.ttf",
+      "mimeType" : "font/ttf",
+      "lastUpdated" : 1639090569,
+      "checksum" : "7a9da4709ccd33c6f8000ea30b918e95",
+      "fileSize" : 22224
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-700.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "bf28241e67511184c14dbd0ef7d39f91",
+      "fileSize" : 15828
+    },
+    {
+      "path" : "images/apple-touch-icon.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "d4139d81175e9195cf4f6e7e10eb105a",
+      "fileSize" : 4798
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-700.eot",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "9270fbbf6b1dc1781310f9b089236bf5",
+      "fileSize" : 17794
+    },
+    {
+      "path" : "images/no-cover.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639153356,
+      "checksum" : "a3b65f4fa7e09d726ba19e974cade2f3",
+      "fileSize" : 194
+    },
+    {
+      "path" : "global.css",
+      "mimeType" : "text/css",
+      "lastUpdated" : 1641059430,
+      "checksum" : "7d8f736973f77c06702cdb72bc27644b",
+      "fileSize" : 2767
+    },
+    {
+      "path" : "images/Card-ZoomCrop.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1640996880,
+      "checksum" : "b2d4b5c3fbc24633f7263b8aef332669",
+      "fileSize" : 52379
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-600.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "53bf266eab8145e1e1b5ce76e655aad2",
+      "fileSize" : 12636
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-500.woff",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "da2721c68b4bc80db8d4c404f76b118c",
+      "fileSize" : 20532
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-700.woff",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "68d6dabfe54e245e7d5d5c16c3c4b1a9",
+      "fileSize" : 20396
+    },
+    {
+      "path" : "fonts/bootstrap-icons.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639058017,
+      "checksum" : "e07b538aa51b6fa77f32828af21cb591",
+      "fileSize" : 90528
+    },
+    {
+      "path" : "images/add-to-walletpasses.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1640977921,
+      "checksum" : "9c3beaeea9acf80cddde6246256110d9",
+      "fileSize" : 29103
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-600.woff",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "d9f322022c80e6589883f04a52bcfa13",
+      "fileSize" : 15680
+    },
+    {
+      "path" : "images/apple-wallet.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1640977921,
+      "checksum" : "ae215bc20fb1049d6963296c7b4ca77a",
+      "fileSize" : 17456
+    },
+    {
+      "path" : "images/apple-touch-icon-57x57.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "d4139d81175e9195cf4f6e7e10eb105a",
+      "fileSize" : 4798
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-regular.woff",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "d1aa1af0e18bf29c82b7e9b043e7c4a7",
+      "fileSize" : 15152
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-regular.woff",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "dc3e086fc0c5addc09702e111d2adb42",
+      "fileSize" : 20332
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-700.ttf",
+      "mimeType" : "font/ttf",
+      "lastUpdated" : 1639056878,
+      "checksum" : "9a12199a43c93cdb17ed977352c49cca",
+      "fileSize" : 36052
+    },
+    {
+      "path" : "images/Libraree-lightshade.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1638997157,
+      "checksum" : "796988a1aba0703a47e67b4782dd82aa",
+      "fileSize" : 108846
+    },
+    {
+      "path" : "bootstrap.min.css.map",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639058448,
+      "checksum" : "95fca4cc7b7d54a6bb0a6a1a11c904fa",
+      "fileSize" : 451427
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-600.woff",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639090569,
+      "checksum" : "d8c9603b5541819a796694260cc8b0a6",
+      "fileSize" : 15392
+    },
+    {
+      "path" : "images/Libraree-darkshade.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1638997160,
+      "checksum" : "9e1a66605b44ab88b786288d2bbbe0ee",
+      "fileSize" : 107119
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-600.eot",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "44128a3344a64c6ff4f0d668325161df",
+      "fileSize" : 14372
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-500.svg",
+      "mimeType" : "image/svg+xml",
+      "lastUpdated" : 1639056878,
+      "checksum" : "95204ac95130828753c0ee0ada537c33",
+      "fileSize" : 48624
+    },
+    {
+      "path" : "images/fabric.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639079224,
+      "checksum" : "ac1839b05d92a3c9818f9063ad10098e",
+      "fileSize" : 80065
+    },
+    {
+      "path" : "images/apple-touch-icon-152x152.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "5ab0e7ffeb404c131089bd922b38f1a0",
+      "fileSize" : 30293
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-regular.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "5c22d75382e4940d49c5bd1172f4e5e5",
+      "fileSize" : 12148
+    },
+    {
+      "path" : "images/apple-touch-icon-72x72.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "11ef5660970c3e71885ba74e692ba66e",
+      "fileSize" : 7195
+    },
+    {
+      "path" : "images/apple-touch-icon-144x144.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1639166492,
+      "checksum" : "ad6bc20d882f379e3ea4d932b18e1411",
+      "fileSize" : 27046
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-500.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "f00e7e4432f7c70d8c97efbe2c50d43b",
+      "fileSize" : 15920
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-regular.eot",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639090569,
+      "checksum" : "3228d8521441fb81e2225bd11cf2db57",
+      "fileSize" : 13517
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-500.eot",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "5780a05edfff10db7cbd56156b8be869",
+      "fileSize" : 18043
+    },
+    {
+      "path" : "images/favicon.ico",
+      "mimeType" : "image/vnd.microsoft.icon",
+      "lastUpdated" : 1639166492,
+      "checksum" : "e4f80646dd1cf6dccc5530fcdf68ac42",
+      "fileSize" : 34494
+    },
+    {
+      "path" : "images/add-to-apple-wallet.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1640977921,
+      "checksum" : "fef8718c7d23e9acc09346e19080434f",
+      "fileSize" : 17794
+    },
+    {
+      "path" : "fonts.css",
+      "mimeType" : "text/css",
+      "lastUpdated" : 1639090541,
+      "checksum" : "e5e2a2192161783c60d9e09d13f47853",
+      "fileSize" : 5660
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-700.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "affb908548e3f898ed4e583bd77424ab",
+      "fileSize" : 12460
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-600.ttf",
+      "mimeType" : "font/ttf",
+      "lastUpdated" : 1639056776,
+      "checksum" : "85917200a6334f46c7a1c21ac7f98f78",
+      "fileSize" : 26816
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-regular.woff",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639090569,
+      "checksum" : "0f03f6f8fedfdf7b895f8e633a76a511",
+      "fileSize" : 15160
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-700.woff",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "4ee76803eddb4ba55006a240c69dd57b",
+      "fileSize" : 15644
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-regular.woff2",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "aa23b7b4bcf2b8f0e876106bb3de69c6",
+      "fileSize" : 15688
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-600.svg",
+      "mimeType" : "image/svg+xml",
+      "lastUpdated" : 1639056776,
+      "checksum" : "508740fe465ff8335a402d67fc8232bb",
+      "fileSize" : 57148
+    },
+    {
+      "path" : "build/bundle.js.map",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1641149928,
+      "checksum" : "c462b8fb6213a65caee36e0ea9da6725",
+      "fileSize" : 4298654
+    },
+    {
+      "path" : "images/Libraree-dark.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1638997068,
+      "checksum" : "afca7766070d797edf5a564c0983d0cd",
+      "fileSize" : 104387
+    },
+    {
+      "path" : "fonts/roboto-mono-v13-latin-600.eot",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639090569,
+      "checksum" : "eadf40734914518f088f8f4176cbe2b6",
+      "fileSize" : 13732
+    },
+    {
+      "path" : "bootstrap-icons.css",
+      "mimeType" : "text/css",
+      "lastUpdated" : 1638992964,
+      "checksum" : "3190941a4304f8133c9aec5bf5df17a7",
+      "fileSize" : 68473
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-700.eot",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "2e328ade65bf01c78a0a157beb36da9f",
+      "fileSize" : 14291
+    },
+    {
+      "path" : "images/Libraree-light.png",
+      "mimeType" : "image/png",
+      "lastUpdated" : 1638996775,
+      "checksum" : "e9d0cf39b16bd774c97bbd1407feacb6",
+      "fileSize" : 108364
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-regular.eot",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056878,
+      "checksum" : "3958b787a5f14f550460f32cadc3bc6e",
+      "fileSize" : 17822
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-regular.svg",
+      "mimeType" : "image/svg+xml",
+      "lastUpdated" : 1639056776,
+      "checksum" : "24357747854e5bf7e5dd26431f3b8869",
+      "fileSize" : 56887
+    },
+    {
+      "path" : "fonts/readex-pro-v5-latin-regular.eot",
+      "mimeType" : "application/octet-stream",
+      "lastUpdated" : 1639056776,
+      "checksum" : "df5efeec67d53bcb73dbb8e53ca61cb1",
+      "fileSize" : 13870
+    },
+    {
+      "path" : "fonts/roboto-v29-latin-500.ttf",
+      "mimeType" : "font/ttf",
+      "lastUpdated" : 1639056878,
+      "checksum" : "b383c3fca0b202f27afe0633de89731e",
+      "fileSize" : 36460
+    }
+  ]
+}

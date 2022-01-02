@@ -8,6 +8,11 @@
 
 	export let context: CardContext;
 
+    function number() {
+        context.screen = Screen.Number;
+        dispatch('next');
+    }
+
     function crop() {
         context.screen = Screen.ZoomCrop;
         dispatch('next');
@@ -31,8 +36,15 @@
 <div class="row">
     <div class="col">
         <div class="m-3">
-            <p>Unfortunately, we've not been able to match the barcode to the number you entered.</p>
+            <p>Unfortunately, we've not been able to match the barcode to the number {context.number}.</p>
             <p>You can try one of the following:</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="m-5 text-center">
+            <button class="btn btn-normal" on:click={() => number()} disabled={!context.number}><Icon name="keyboard-fill" /> Change the number</button>
         </div>
     </div>
 </div>

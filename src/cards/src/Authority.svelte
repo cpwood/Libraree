@@ -1,14 +1,13 @@
 <script lang="ts">
     import type Library from './back/Library';
     import ApiService from './back/ApiService'; 
-    import { createEventDispatcher, onMount } from 'svelte';
+    import { createEventDispatcher } from 'svelte';
     import type CardContext from './back/CardContext';
     import { Screen } from './back/Screens';
 
 	const dispatch = createEventDispatcher();
 
 	export let context: CardContext;
-    let input: HTMLInputElement;
  
     let libraryName = '';
     const service = new ApiService();
@@ -25,8 +24,6 @@
         context.screen = Screen.Number;
         dispatch('next');
     }
-    
-    onMount(() => input.focus());
 </script>
 
 <style>
@@ -54,7 +51,7 @@
 <div class="row mt20">
     <div class="col">
         <div>
-            <input bind:this={input} bind:value={libraryName} on:keyup={handleKey} placeholder="Type a Local Authority name, e.g. Wigan" class="form-control text-center search-box" />
+            <input bind:value={libraryName} on:keyup={handleKey} placeholder="Type a Local Authority name, e.g. Wigan" class="form-control text-center search-box" />
         </div>
     </div>
 </div>

@@ -1,0 +1,8 @@
+region: eu
+tunnels:
+  front:
+    proto: http
+    addr: 54377
+    subdomain: your-subdomain
+    inspect: false
+    bind_tls: true

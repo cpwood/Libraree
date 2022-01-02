@@ -5,7 +5,6 @@ import CardRequest from '../models/CardRequest';
 import { createTableService, TableService, TableUtilities } from 'azure-storage';
 import { promisify } from 'util';
 import axios from 'axios';
-import Jimp from 'jimp';
 
 export default class Generator {
     manifest: { [file:string] : string };
@@ -62,33 +61,16 @@ export default class Generator {
         const response = await axios.get(`https://libraree.blob.core.windows.net/brands/${code}.png`, {
             responseType: 'arraybuffer'
         });
+
         const raw = response.data as Buffer;
-        const image = await Jimp.read(raw);
+        const hash = this.createHash(raw);
 
-        let data = await image
-            .clone()
-            .resize(35, 35)
-            .getBufferAsync(Jimp.MIME_PNG);
-
-        this.zip.file('icon.png', data);
-        this.manifest['icon.png'] = this.createHash(data);
-
-
-        data = await image
-            .clone()
-            .resize(70, 70)
-            .getBufferAsync(Jimp.MIME_PNG);
-
-        this.zip.file('icon@2x.png', data);
-        this.manifest['icon@2x.png'] = this.createHash(data);
-
-        data = await image
-            .clone()
-            .resize(90, 90)
-            .getBufferAsync(Jimp.MIME_PNG);
-
-        this.zip.file('logo.png', data);
-        this.manifest['logo.png'] = this.createHash(data);
+        this.zip.file('icon.png', raw);
+        this.manifest['icon.png'] = hash;
+        this.zip.file('icon@2x.png', raw);
+        this.manifest['icon@2x.png'] = hash;
+        this.zip.file('logo.png', raw);
+        this.manifest['logo.png'] = hash;
     }
 
     private createHash(content: crypto.BinaryLike): string {

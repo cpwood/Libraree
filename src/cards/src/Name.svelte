@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { createEventDispatcher, onMount } from 'svelte';
+    import { createEventDispatcher } from 'svelte';
     import ApiService from './back/ApiService'; 
     import type CardContext from './back/CardContext';
     import { Screen } from './back/Screens';
@@ -9,7 +9,6 @@
     let generating = false;
     let canvas: HTMLCanvasElement;
     let apiService = new ApiService();
-    let input: HTMLInputElement;
 
 	export let context: CardContext;
 
@@ -27,8 +26,6 @@
 
         dispatch('next');
     }
-
-    onMount(() => input.focus());
 </script>
 
 <style>
@@ -51,7 +48,7 @@
 <div class="row">
     <div class="col">
         <div class="m-3">
-            <input bind:this={input} type="text" bind:value={context.name} placeholder="Your Name" class="form-control text-center" />
+            <input type="text" bind:value={context.name} placeholder="Your Name" class="form-control text-center" />
         </div>
     </div>
 </div>

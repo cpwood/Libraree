@@ -7,7 +7,8 @@
     "dev": "PORT=54377 rollup -c -w",
     "start": "sirv public --no-clear",
     "lint": "eslint . --ext .js,.ts,.svelte --fix",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "ngrok": "ngrok start -config $HOME/.ngrok2/ngrok.yml -config ngrok.yml front"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -54,7 +55,6 @@
     "file-saver": "^2.0.5",
     "jszip": "^3.7.1",
     "reflect-metadata": "^0.1.13",
-    "svelte-easy-crop": "^1.0.5",
     "sveltestrap": "^5.6.3",
     "underscore": "^1.13.1"
   }

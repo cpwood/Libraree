@@ -62,8 +62,8 @@
 					<h1>Put UK library cards in your Apple or Android wallet for free.</h1>
 				</div>
 			</div>
-			{#if device.device.type != 'smartphone' && location.hostname == 'cards.libraree.org'}
-				<div class="row m-5 d-none d-md-block">
+			{#if device.os.name != 'iOS' && device.os.name != 'Android' && location.hostname == 'cards.libraree.org'}
+				<div class="row m-5">
 					<div class="col text-center">
 						<img class="qr" src="/images/libraree-qr.png" alt="QR Code for cards.libraree.org" />
 						<p>Scan this QR code using your phone's Camera app to get started!</p>
