@@ -19,6 +19,7 @@
     "jimp": "^0.16.1",
     "jszip": "^3.7.1",
     "node-forge": "^0.10.0",
+    "pdf-lib": "^1.17.1",
     "reflect-metadata": "^0.1.13",
     "underscore": "^1.13.1"
   },

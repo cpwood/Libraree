@@ -24,9 +24,9 @@
     {
       "path" : "build/bundle.js",
       "mimeType" : "text/javascript",
-      "lastUpdated" : 1641208073,
-      "checksum" : "d51b2e5c1cfd78233a620b8e898dcfeb",
-      "fileSize" : 1685529
+      "lastUpdated" : 1641225114,
+      "checksum" : "01c5e0b5e706cc95b3e3c1bd177c9aaa",
+      "fileSize" : 1685670
     },
     {
       "path" : "fonts/roboto-v29-latin-regular.svg",
@@ -38,8 +38,8 @@
     {
       "path" : "build/bundle.css",
       "mimeType" : "text/css",
-      "lastUpdated" : 1641208073,
-      "checksum" : "ccc256254ebf39dd66a19d69e17447a9",
+      "lastUpdated" : 1641225114,
+      "checksum" : "07a3e80eb68c80ab22581e3829ccfd07",
       "fileSize" : 3271
     },
     {
@@ -472,9 +472,9 @@
     {
       "path" : "build/bundle.js.map",
       "mimeType" : "application/octet-stream",
-      "lastUpdated" : 1641197625,
-      "checksum" : "8fa8969de6e18a462147e5a082f1b441",
-      "fileSize" : 4324015
+      "lastUpdated" : 1641224996,
+      "checksum" : "26a4c8bac852ad9843a69ff7cc553a60",
+      "fileSize" : 4323793
     },
     {
       "path" : "images/Libraree-dark.png",

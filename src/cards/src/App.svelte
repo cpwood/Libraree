@@ -3,15 +3,16 @@
 	import { Screen } from './back/Screens';
 	import CardContext from './back/CardContext';
 	import Wizard from './Wizard.svelte';
-import Authority from './Authority.svelte';
-import Number from './Number.svelte';
-import FullPhoto from './FullPhoto.svelte';
-import ZoomCrop from './ZoomCrop.svelte';
-import Working from './Working.svelte';
-import Name from './Name.svelte';
-import Download from './Download.svelte';
-import Support from './Support.svelte';
-import QuickCreate from './QuickCreate.svelte';
+	import Authority from './Authority.svelte';
+	import Number from './Number.svelte';
+	import FullPhoto from './FullPhoto.svelte';
+	import ZoomCrop from './ZoomCrop.svelte';
+	import Working from './Working.svelte';
+	import Name from './Name.svelte';
+	import Download from './Download.svelte';
+	import Support from './Support.svelte';
+	import QuickCreate from './QuickCreate.svelte';
+	import { LIBRARIES } from './back/Library';
 
 	let context = new CardContext();
 
@@ -28,6 +29,17 @@ import QuickCreate from './QuickCreate.svelte';
 	function next() {
 		context.screen = context.screen;
 	}
+
+	if (location.hash != undefined) {
+		const library = LIBRARIES.find(x => x.code == location.hash.substring(1));
+
+		if (library) {
+			context.library = library;
+			context.screen = Screen.Number;
+			history.pushState(null, '', '/');
+		}
+	}
+
 </script>
 
 <style>

@@ -43,7 +43,7 @@
 <div class="row">
     <div class="col">
         <div class="m-3">
-            <p>Great! Let's set up a library card in your wallet for <strong>{context.library.name}</strong>.</p>
+            <p>Let's set up a library card in your wallet for <strong>{context.library.name}</strong>.</p>
         </div>
     </div>
 </div>
