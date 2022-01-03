@@ -1,7 +1,6 @@
 import { Screen } from './Screens';
 import type Barcode from './Barcode';
-import type Library from './Library';
-import Libraries from '../../libraries/libraries.json';
+import type { Library } from './Library';
 import BwipJs from '../bwip-js-min.js';
 import { decode } from 'base64-arraybuffer';
 import JSZip from 'jszip';
@@ -28,8 +27,6 @@ export default class CardContext {
     }
 
     generateJson(): void {
-        const brand = Libraries.find(x => x.Code == this.library.code);
-
         const definition = {
             formatVersion: 1,
             passTypeIdentifier: 'pass.org.libraree.cards',
@@ -38,9 +35,9 @@ export default class CardContext {
             organizationName: 'CHRISTOPHER PETER WOOD',
             description: 'Library Card',
             logoText: `${this.library.name} Libraries`,
-            foregroundColor: this.convertToRgb(brand.TextColour),
-            backgroundColor: this.convertToRgb(brand.BackgroundColour),
-            labelColor: this.convertToRgb(brand.LabelColour),
+            foregroundColor: this.convertToRgb(this.library.textColour),
+            backgroundColor: this.convertToRgb(this.library.backgroundColour),
+            labelColor: this.convertToRgb(this.library.labelColour),
             barcodes: [
                 {
                     format: 'PKBarcodeFormatQR',

@@ -3,7 +3,7 @@
     import ApiService from './back/ApiService'; 
     import { BARCODES } from './back/Barcode';
     import type CardContext from './back/CardContext';
-    import type Library from './back/Library';
+    import { LIBRARIES } from './back/Library';
     import { Screen } from './back/Screens';
 
 	const dispatch = createEventDispatcher();
@@ -11,33 +11,6 @@
     let generating = false;
     let canvas: HTMLCanvasElement;
     let apiService = new ApiService();
-
-    const services: Library[] = [
-        {
-            name: 'Birmingham',
-            code: 'E08000025'
-        },
-        {
-            name: 'Derbyshire',
-            code: 'E10000007'
-        },
-        {
-            name: 'Essex',
-            code: 'E10000012'
-        },
-        {
-            name: 'Lancashire',
-            code: 'E10000017'
-        },
-        {
-            name: 'Manchester',
-            code: 'E08000003'
-        },
-        {
-            name: 'Wigan',
-            code: 'E08000010'
-        },
-    ];
 
 	export let context: CardContext;
 
@@ -75,7 +48,7 @@
     <div class="col">
         <div class="m-3">
             <select bind:value={context.library} class="form-control form-select">
-                {#each services as service}
+                {#each LIBRARIES as service}
                     <option value={service}>
                         {service.name}
                     </option>

@@ -1,21 +1,25 @@
 <script lang="ts">
-    import type Library from './back/Library';
-    import ApiService from './back/ApiService'; 
+    import { Library, LIBRARIES } from './back/Library';
     import { createEventDispatcher } from 'svelte';
     import type CardContext from './back/CardContext';
     import { Screen } from './back/Screens';
+    import _ from 'underscore';
 
 	const dispatch = createEventDispatcher();
 
 	export let context: CardContext;
  
     let libraryName = '';
-    const service = new ApiService();
 
     let completionOptions: Library[] = [];
 
     async function handleKey() {
-        completionOptions = await service.listServices(libraryName, []);
+        if (libraryName.length > 2) {
+            completionOptions = _.filter(LIBRARIES, x => x.name.toLowerCase().indexOf(libraryName.toLowerCase()) > -1);
+        }
+        else {
+            completionOptions = [];
+        }
     }
 
     function selectLibrary(library: Library) {

@@ -55,13 +55,23 @@
     }
 </style>
 
-<div class="row mt20">
-    <div class="col">
-        <div class="m-3">
-            <p>To help us make this process a little easier for others in the future, we've recorded that {context.library.name} libraries use a "{context.type.name}" barcode. No personal information has been shared or stored.</p>
+{#if (context.discovered)}
+    <div class="row mt20">
+        <div class="col">
+            <div class="m-3">
+                <p>To help us make this process a little easier for others in the future, we've recorded that {context.library.name} libraries use a "{context.type.name}" barcode. No personal information has been shared or stored.</p>
+            </div>
         </div>
     </div>
-</div>
+{:else}
+    <div class="row mt20">
+        <div class="col">
+            <div class="m-3">
+                <p>Your {context.library.name} library card is ready to download into Apple Wallet or Wallet Passes.</p>
+            </div>
+        </div>
+    </div>
+{/if}
 <div class="row">
     <div class="col">
         <div class="alert alert-warning m-3" role="alert">
