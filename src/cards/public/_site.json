@@ -24,9 +24,9 @@
     {
       "path" : "build/bundle.js",
       "mimeType" : "text/javascript",
-      "lastUpdated" : 1641198698,
-      "checksum" : "48333da084d614e12affaf4fac1612a2",
-      "fileSize" : 1685790
+      "lastUpdated" : 1641208073,
+      "checksum" : "d51b2e5c1cfd78233a620b8e898dcfeb",
+      "fileSize" : 1685529
     },
     {
       "path" : "fonts/roboto-v29-latin-regular.svg",
@@ -38,8 +38,8 @@
     {
       "path" : "build/bundle.css",
       "mimeType" : "text/css",
-      "lastUpdated" : 1641198698,
-      "checksum" : "cae8e0c0f14c5806a88de0cd9f3ff823",
+      "lastUpdated" : 1641208073,
+      "checksum" : "ccc256254ebf39dd66a19d69e17447a9",
       "fileSize" : 3271
     },
     {
