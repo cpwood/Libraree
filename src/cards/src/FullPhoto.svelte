@@ -46,15 +46,14 @@
 <div class="row">
     <div class="col">
         <div class="m-5">
-            <p>Now take or choose a photo of your library card. Again, it won't leave your phone.</p>
+            <p>Now take a photo of your library card. Again, it won't leave your phone.</p>
 
             <p class="text-center">
                 <img src="/images/Card-Full.png" alt="Example card" />
             </p>
             
             <ul>
-                <li>Get as close to your card as possible without things getting blurry.</li>
-                <li>If the photo becomes blurry, move your phone further away from your card.</li>
+                <li>Pinch to zoom into the barcode and keep the image sharp.</li>
                 <li>Try to use light from a window and avoid shadows.</li>
             </ul>
 
@@ -64,8 +63,8 @@
 <div class="row">
     <div class="col">
         <div class="text-center">
-            <button class="btn btn-success" on:click={() => fileinput.click()}><Icon name="camera-fill" /> Take or Choose a Photo</button>
-            <input id="fileinput" type="file" accept=".jpg, .jpeg, .png" on:change={(e)=>onFileSelected(e)} bind:this={fileinput} />
+            <button class="btn btn-success" on:click={() => fileinput.click()}><Icon name="camera-fill" /> Take a Photo</button>
+            <input id="fileinput" type="file" accept=".jpg, .jpeg, .png" on:change={(e)=>onFileSelected(e)} bind:this={fileinput} capture={true} />
         </div>
     </div>
 </div>
