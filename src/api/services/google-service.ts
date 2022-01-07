@@ -6,19 +6,22 @@ export default class GoogleService {
     async getTitles(filter: string): Promise<GoogleResult[]> {
         const response = await axios.get(this.appendKeyToUrl(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(this.getIsbn(filter))}`));
         const items = response.data.items;
-    
-        return _.map(items, x => {
-            return new GoogleResult(
-                x.id,
-                x.volumeInfo.title,
-                x.volumeInfo.subtitle,
-                x.volumeInfo.authors,
-                x.volumeInfo.publishedDate,
-                x.volumeInfo.imageLinks?.smallThumbnail?.replace('http://books.google.com', 'https://books.google.com'),
-                x.volumeInfo.imageLinks?.thumbnail?.replace('http://books.google.com', 'https://books.google.com'),
-                x.volumeInfo.industryIdentifiers.find(y => y.type == 'ISBN_13')?.identifier
-            );
-        });
+
+        return _.chain(items)
+            .filter(x => x.volumeInfo.industryIdentifiers)
+            .map(x => {
+                return new GoogleResult(
+                    x.id,
+                    x.volumeInfo.title,
+                    x.volumeInfo.subtitle,
+                    x.volumeInfo.authors,
+                    x.volumeInfo.publishedDate,
+                    x.volumeInfo.imageLinks?.smallThumbnail?.replace('http://books.google.com', 'https://books.google.com'),
+                    x.volumeInfo.imageLinks?.thumbnail?.replace('http://books.google.com', 'https://books.google.com'),
+                    x.volumeInfo.industryIdentifiers.find(y => y.type == 'ISBN_13')?.identifier
+                );
+            })
+            .value();
     }
 
     private getIsbn(filter: string): string {
