@@ -8,6 +8,8 @@
     import Book from './Book.svelte';
     import Menu from './Menu.svelte';
     import { createEventDispatcher } from 'svelte';
+    import BarcodeService from './back/barcode-service';
+    import PinchZoom from './PinchZoom.svelte';
 
     const dispatch = createEventDispatcher();
 
@@ -19,6 +21,9 @@
     let screenName = 'search';
     let libraryResults: ServiceResult[] = [];
     let currentBook: GoogleResult = null;
+
+    const barcode = new BarcodeService();
+	let fileInput: HTMLInputElement;
 
     async function doSearch() {
         currentBook = null;
@@ -47,6 +52,34 @@
 
     function goToCredits() {
 		dispatch('credits');
+	}
+
+    async function onBarcode(e) {
+		const result = await barcode.readBarcode(e.target.files[0]);
+
+		if (result) {
+			filter = result;
+			doSearch();
+		}
+	}
+
+    const state = {
+		open: false,
+		doNotShow: localStorage.getItem('pinchModalHidden') == 'true'
+	};
+
+	function launchModal() {
+		if (state.doNotShow) {
+			closeModal();
+		}
+		else {
+			state.open = true;
+		}
+	}
+
+	function closeModal() {
+		localStorage.setItem('pinchModalHidden', `${state.doNotShow}`);
+		fileInput.click();
 	}
 
     doSearch(); 
@@ -114,10 +147,6 @@
         font-size: 0.9em;
     }
 
-    .submit {
-        width: 100%;
-    }
-
     .back {
         border: none;
         position: absolute;
@@ -130,6 +159,14 @@
     .back:focus {
         border: none !important;
     }
+
+    .submit {
+        min-width: 50px;
+    }
+
+    #fileInput {
+		display: none;
+	}
 </style>
 
 <div>
@@ -149,7 +186,8 @@
                 <div class="col-12 input-group">
                     <input type="search" bind:value={filter} class="form-control search-box" placeholder="Book title, author or ISBN" enterkeyhint="search" />
                     <div class="input-group-append">
-                        <button type="submit" class="btn btn-secondary ml-10 submit" on:click|preventDefault={() => doSearch()}><Icon name="search" /></button>
+                        <button type="submit" class="btn btn-secondary submit ml-10" on:click|preventDefault={() => doSearch()}><Icon name="search" /></button>
+                        <button type="submit" class="btn btn-secondary submit" on:click|preventDefault={() => launchModal()}><img class="barcode" src="/images/barcode.png" alt="Scan barcode"></button>
                     </div>
                 </div>
             </form>
@@ -238,3 +276,6 @@
     </div>
 </div>
 
+<input bind:this={fileInput} id="fileInput" type="file" accept=".jpg, .jpeg, .png" on:change={(e)=>onBarcode(e)} capture={true} />
+
+<PinchZoom {state} on:close={() => closeModal()} />
