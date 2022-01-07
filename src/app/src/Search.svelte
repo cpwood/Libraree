@@ -10,6 +10,7 @@
     import { createEventDispatcher } from 'svelte';
     import BarcodeService from './back/barcode-service';
     import PinchZoom from './PinchZoom.svelte';
+    import DeviceDetector from 'device-detector-js';
 
     const dispatch = createEventDispatcher();
 
@@ -24,6 +25,9 @@
 
     const barcode = new BarcodeService();
 	let fileInput: HTMLInputElement;
+
+    const deviceDetector = new DeviceDetector();
+	const device = deviceDetector.parse(navigator.userAgent);
 
     async function doSearch() {
         currentBook = null;
@@ -187,7 +191,9 @@
                     <input type="search" bind:value={filter} class="form-control search-box" placeholder="Book title, author or ISBN" enterkeyhint="search" />
                     <div class="input-group-append">
                         <button type="submit" class="btn btn-secondary submit ml-10" on:click|preventDefault={() => doSearch()}><Icon name="search" /></button>
-                        <button type="submit" class="btn btn-secondary submit" on:click|preventDefault={() => launchModal()}><img class="barcode" src="/images/barcode.png" alt="Scan barcode"></button>
+                        {#if device.os.name == 'iOS' || device.os.name == 'Android'}
+                            <button type="submit" class="btn btn-secondary submit" on:click|preventDefault={() => launchModal()}><img class="barcode" src="/images/barcode.png" alt="Scan barcode"></button>
+                        {/if}
                     </div>
                 </div>
             </form>

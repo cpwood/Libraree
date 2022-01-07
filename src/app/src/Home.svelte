@@ -5,9 +5,13 @@
 	import Menu from './Menu.svelte';
 	import BarcodeService from './back/barcode-service';
 	import PinchZoom from './PinchZoom.svelte';
+	import DeviceDetector from 'device-detector-js';
 
 	const dispatch = createEventDispatcher();
 	const barcode = new BarcodeService();
+
+	const deviceDetector = new DeviceDetector();
+	const device = deviceDetector.parse(navigator.userAgent);
 
 	let fileInput: HTMLInputElement;
 	
@@ -131,7 +135,9 @@
 							enterkeyhint="search" />
 							<div class="input-group-append">
 								<button type="submit" class="btn btn-secondary ml-10" on:click|preventDefault={() => doSearch()}><Icon name="search" /></button>
-								<button type="submit" class="btn btn-secondary" on:click|preventDefault={() => launchModal()}><img class="barcode" src="/images/barcode.png" alt="Scan barcode"></button>
+								{#if device.os.name == 'iOS' || device.os.name == 'Android'}
+									<button type="submit" class="btn btn-secondary" on:click|preventDefault={() => launchModal()}><img class="barcode" src="/images/barcode.png" alt="Scan barcode"></button>
+								{/if}
 							</div>
 						
 					</div>
