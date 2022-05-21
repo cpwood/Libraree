@@ -14,7 +14,7 @@
     "axios": "^0.24.0",
     "azure-storage": "^2.10.6",
     "bwip-js": "^3.0.4",
-    "catalogues-library": "^1.0.18",
+    "catalogues-library": "file:../../../catalogues-library",
     "class-transformer": "^0.5.1",
     "jimp": "^0.16.1",
     "jszip": "^3.7.1",
